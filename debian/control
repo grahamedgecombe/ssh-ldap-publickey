@@ -1,0 +1,21 @@
+Source: ssh-ldap-publickey
+Section: net
+Priority: optional
+Maintainer: Graham Edgecombe <graham@grahamedgecombe.com>
+Build-Depends: debhelper (>= 9), libldap2-dev
+Standards-Version: 3.9.5
+Homepage: http://grahamedgecombe.com/projects/ssh-ldap-publickey
+Vcs-Git: git://git.grahamedgecombe.com/ssh-ldap-publickey.git
+Vcs-Browser: http://git.grahamedgecombe.com/ssh-ldap-publickey.git/tree/
+
+Package: ssh-ldap-publickey
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Enhances: openssh-server
+Description: Program for looking up SSH public keys with LDAP
+ ssh-ldap-publickey looks up the SSH public keys for a specified user
+ in an LDAP directory and writes them to stdout.
+ .
+ It can be used in conjunction with OpenSSH's AuthorizedKeysCommand
+ directive to store public keys in LDAP, rather than the user's
+ authorized_keys file.
