@@ -68,7 +68,7 @@ int main(int argc, char **argv)
     return 1;
   }
 
-  /* Escape UID and create the LDAP filter */
+  /* Escape UID and create the LDAP filter. */
   char *uid = lpk_escape(argv[1]);
   if (!uid)
   {
