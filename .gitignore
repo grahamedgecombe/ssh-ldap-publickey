@@ -1,0 +1,6 @@
+.*
+*~
+/ssh-ldap-publickey
+/ssh-ldap-publickey.8.gz
+!.git*
+!.mailmap
