@@ -130,7 +130,6 @@ int main(int argc, char **argv)
   /* Tidy up. */
 free_msg:
   ldap_msgfree(result);
-free_ldap:
   ldap_destroy(ldap);
 free_filter:
   free(filter);
