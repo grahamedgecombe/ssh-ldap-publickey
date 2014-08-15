@@ -94,9 +94,10 @@ int main(int argc, char **argv)
     goto free_filter;
   }
 
+  char *attributes[] = { LPK_ATTRIBUTE, 0 };
   LDAPMessage *result;
   if ((err = ldap_search_ext_s(ldap, 0, LDAP_SCOPE_SUBTREE, filter,
-    0, 0, 0, 0, 0, LDAP_NO_LIMIT, &result)) != LDAP_SUCCESS)
+    attributes, 0, 0, 0, 0, LDAP_NO_LIMIT, &result)) != LDAP_SUCCESS)
   {
     fprintf(stderr, "ldap_search_ext_s: %s\n", ldap_err2string(err));
     ret = 1;
