@@ -1,3 +1,13 @@
+ssh-ldap-publickey (1.0.1) unstable; urgency=low
+
+  * Update README.markdown.
+  * Add minimum version of OpenSSH to the control file.
+  * Fix AuthorizedKeysCommandUser directive name in the man page.
+  * Fix potential memory leak.
+  * Only fetch the sshPublicKey attribute.
+
+ -- Graham Edgecombe <graham@grahamedgecombe.com>  Fri, 15 Aug 2014 22:04:13 +0100
+
 ssh-ldap-publickey (1.0.0) unstable; urgency=low
 
   * Initial release.
