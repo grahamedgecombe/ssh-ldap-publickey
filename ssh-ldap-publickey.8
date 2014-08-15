@@ -17,7 +17,7 @@ adding the following lines to sshd_config(5):
 
 .DS
   AuthorizedKeysCommand /usr/bin/ssh-ldap-publickey
-  AuthorizedKeysRunAs nobody
+  AuthorizedKeysCommandUser nobody
 .DE
 
 This allows authorized SSH public keys to be fetched from LDAP, rather than the
