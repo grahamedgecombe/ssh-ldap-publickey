@@ -44,5 +44,19 @@ be done with the `dpkg-buildpackage` command. Alternatively, I distribute
 pre-built versions for the stable i386 and amd64 versions of Debian in my
 [personal APT repository][2].
 
+License
+-------
+
+ssh-ldap-publickey is available under the [ISC license][3], please see the
+`LICENSE` file for the licensing terms.
+
+`ssh-ldap-publickey.schema` was created by Eric Auge as part of his
+[OpenSSH-LPK patch][4], which was released under the
+[3-clause BSD license][5]. Please see the `debian/copyright` file for the
+licensing terms.
+
 [1]: https://github.com/AndriiGrytsenko/openssh-ldap-publickey
 [2]: http://grahamedgecombe.com/apt-repository
+[3]: http://opensource.org/licenses/ISC
+[4]: https://code.google.com/p/openssh-lpk/
+[5]: http://opensource.org/licenses/BSD-3-Clause
