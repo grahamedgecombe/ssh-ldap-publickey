@@ -11,7 +11,7 @@ Vcs-Browser: http://git.grahamedgecombe.com/ssh-ldap-publickey.git/tree/
 Package: ssh-ldap-publickey
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Enhances: openssh-server
+Enhances: openssh-server (>= 1:6.1)
 Description: Program for looking up SSH public keys with LDAP
  ssh-ldap-publickey looks up the SSH public keys for a specified user
  in an LDAP directory and writes them to stdout.
