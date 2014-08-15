@@ -101,7 +101,7 @@ int main(int argc, char **argv)
   {
     fprintf(stderr, "ldap_search_ext_s: %s\n", ldap_err2string(err));
     ret = 1;
-    goto free_ldap;
+    goto free_msg;
   }
 
   /* Iterate through each result. */
